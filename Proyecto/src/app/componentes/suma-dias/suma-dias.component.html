@@ -1,0 +1,30 @@
+<section class="register">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 mx-auto">
+                <div class="card-register">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h1 class="h3 mb-3 font-weigth-normal">Suma Dias</h1>
+                            <p class="h6 mb-3 font-weigth-normal">ingresa un numero y veras cuales son tus dias mas productivos</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <form formReister="ngForm" (ngSubmit)="calcular()">
+                                <div class="form-group">
+                                    <input type="text" name="inputNum" [(ngModel)]="inputNum" id="inputNum" class="form-control" placeholder="num" required>
+                                </div>
+                                <button type="submit" class="btn btn-lg btn-primary btn-block">Registrame</button>
+                            </form>
+                        </div>
+                        <div class="card-footer text-center">
+                            <div class="" *ngFor="let item of resp">
+                                <p>sus numero se la suerte son: </p>
+                                <h2>{{this.resp}}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,29 @@
+<section class="register">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 mx-auto">
+                <div class="card-register">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h1 class="h3 mb-3 font-weigth-normal">Ganar</h1>
+                            <p>Registra el dinero ganado este mes</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <form formGanar="ngForm" (ngSubmit)="ganancia()">
+                                <div class="form-group">
+                                    <input type="text" [(ngModel)]="ganar.ingresos" name="ingresos" id="ingresos" class="form-control" placeholder="Ingresos" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" [(ngModel)]="ganar.detalle" name="detalle" id="detalle" class="form-control" placeholder="Indique un detalle del ingreso" required>
+                                </div>
+                                <button type="submit" class="btn btn-lg btn-primary btn-block">Guardar ganancia</button>
+                            </form>
+                        </div>
+                        <div class="card-footer text-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

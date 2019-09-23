@@ -1,0 +1,25 @@
+<section class="producto">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card-menus">
+                    <div class="card">
+                        <div class="card-header bg-dark text-white de-flex justify-content-between align-items-center">
+                            <h1> Accion del pago </h1>
+                            <p>fecha: {{ver.fecha | date: 'dd/MM/yyyy'}}</p>
+                        </div>
+                        <div class="card-body">
+                            <p>Su ingreso para esta fecha es de: {{ver.ingresos}} $</p>
+                            <p>Usted tiene un pago de: {{ver.egresos}} $</p>
+                            <h1>Detalles</h1>
+                            <p>{{ver.detalle}}</p>
+                        </div>
+                        <div class="card-footer">
+                            <a [routerLink]="['/RelacionPagos']" class="btn btn-info btn-block">Volver</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

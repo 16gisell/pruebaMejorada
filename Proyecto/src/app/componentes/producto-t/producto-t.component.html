@@ -1,0 +1,52 @@
+<section class="producto">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card-menus">
+                    <div class="card">
+                        <div class="card-header bg-dark text-white de-flex justify-content-between align-items-center">
+                            <h1>{{productos.titulo}}</h1>
+                        </div>
+                        <img src="{{productos.imagen}}" class="card-img-top">
+                        <div class="card-body">
+                            <p style="text-align: center;">{{productos.descripcion}}</p>
+                            <p style="text-align: center;"> Mas detalle del producto</p>
+                            <p style="text-align: center;">{{productos.descripcionDos}}</p>
+                        </div>
+                        <div class="card-footer">
+                            <h5 style="text-align: center;">{{productos.precio}} $</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="producto">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="card-menus">
+                    <div class="card">
+                        <div class="card-header bg-dark text-white de-flex justify-content-between align-items-center">
+                            <h6 style="text-align: center;">¿Desea realizar su compra?</h6>
+                            <p style="text-align: center;font-size: 12;">Por favor confirme los datos</p>
+                        </div>
+                        <form FromComprar="ngForm" (ngSubmit)="comprar()">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <input type="text" [(ngModel)]="pago.detalle" name="detalle" id="detalle" class="form-control" placeholder="Especifique el titulo del producto">
+                                    <input type="text" [(ngModel)]="pago.egresos" name="egresos" id="egresos" class="form-control" placeholder="especifique el precio del producto $">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-info btn-block">comprar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

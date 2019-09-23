@@ -1,0 +1,32 @@
+<section class="pagos">
+    <div class="container">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Motivo</th>
+                    <th scope="col">Ingreso</th>
+                    <th scope="col">Egreso</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let pago of pagos">
+                <tr>
+                    <th scope="row">{{pago.id}}</th>
+                    <th scope="row">{{pago.detalle}}</th>
+                    <th scope="row">{{pago.ingresos}}</th>
+                    <th scope="row" style="color: red;">{{pago.egresos}}</th>
+                    <th scope="row">{{pago.fecha | date: 'dd-MM-yyyy'}}</th>
+                    <th scope="row"><a [routerLink]="['/VerPago',pago.id]">ver</a></th>
+
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <h6>Cantidad De Ingresos: {{CIngresos}} $</h6>
+            <h6>Cantidad De Egresos: {{CEgresos}} $</h6>
+            <h6>Cantidad Total:{{total}} $</h6>
+        </div>
+    </div>
+</section>

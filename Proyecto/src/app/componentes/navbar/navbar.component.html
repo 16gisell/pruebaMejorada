@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" routerLink="/">{{title_nav}}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/">Tienda</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/ganancias">Ganar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/sumaDias">Suma Dias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/RelacionPagos">relacion de gastos</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+            <!-- <li class="nav-item">
+                <a class="nav-link" routerLink="/auth/profile">user</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/auth/login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/auth/register">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" (click)="onLogout()">logout</a>
+            </li>
+        </ul>
+    </div>
+</nav>
